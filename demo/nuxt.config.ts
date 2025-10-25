@@ -7,14 +7,5 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  nitro: {
-    prerender: {
-      routes: ['/']
-    }
-  },
-  app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/masonri/' : '/',
-    buildAssetsDir: '/assets/'
-  },
   ssr: false
 })
