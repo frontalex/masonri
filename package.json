@@ -1,0 +1,62 @@
+{
+  "name": "masonri",
+  "version": "1.0.0",
+  "description": "A performant and lightweight masonry grid component for Vue 3 and Nuxt.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontalex/masonri.git"
+  },
+  "homepage": "https://frontalex.github.io/masonri",
+  "bugs": {
+    "url": "https://github.com/frontalex/masonri/issues"
+  },
+  "scripts": {
+    "dev": "nuxi dev demo",
+    "build": "npm run build:lib",
+    "build:lib": "npm run clean && npm run build:types && npm run build:copy",
+    "build:types": "tsc",
+    "build:copy": "cp src/Masonri.vue dist/ && cp src/index.ts dist/index.js",
+    "clean": "rm -rf dist && mkdir -p dist",
+    "build:demo": "cd demo && npm run generate",
+    "prepublishOnly": "npm run build:lib",
+    "demo:dev": "cd demo && npm run dev",
+    "demo:build": "cd demo && npm run build",
+    "demo:generate": "cd demo && npm run generate"
+  },
+  "author": {
+    "name": "Alex"
+  },
+  "keywords": [
+    "vue",
+    "nuxt",
+    "grid",
+    "masonry",
+    "layout",
+    "infinite",
+    "responsive"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.5.22",
+    "typescript": "^5.9.3",
+    "vue": "^3.4.29"
+  }
+}

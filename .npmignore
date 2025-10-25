@@ -1,0 +1,37 @@
+# Development files
+demo/
+.github/
+.nuxt/
+.output/
+
+# Source maps
+*.map
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build tools
+tsconfig.json
+
+# Documentation and deployment files
+DEPLOYMENT.md
+QUICK_DEPLOY.md
+*.tgz
+
+# IDE workspace files
+*.code-workspace
+
+masonri.code-workspace
