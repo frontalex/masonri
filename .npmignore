@@ -30,6 +30,7 @@ tsconfig.json
 DEPLOYMENT.md
 QUICK_DEPLOY.md
 *.tgz
+GITHUB_PAGES_SETUP.md
 
 # IDE workspace files
 *.code-workspace
