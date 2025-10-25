@@ -47,3 +47,7 @@ temp/
 
 # IDE workspace files
 *.code-workspace
+
+# Deployment documentation (keep local only)
+DEPLOYMENT.md
+QUICK_DEPLOY.md
